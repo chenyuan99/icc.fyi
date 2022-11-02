@@ -1,0 +1,344 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>icc.fyi</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8647754134355438"
+        crossorigin="anonymous"></script>
+    <style type="text/css">
+        .container {
+            background-color: #ffffff
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            min-height: 80px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 9px 0px !important;
+        }
+
+        .navbar .navbar-brand {
+            position: 0;
+            color: #000000;
+            height: 60px;
+            line-height: 60px;
+            padding-top: 2px;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #fffefe;
+            /* background-color:#75787B; */
+        }
+
+        .navbar .navbar-text {
+            color: #000000;
+            background-color: #75787B;
+        }
+
+        .navbar .navbar-text a {
+            color: #fffefe;
+            background-color: #75787B;
+        }
+
+        .navbar .navbar-text a:hover,
+        .navbar .navbar-text a:focus {
+            color: #fffefe;
+            background-color: #75787B;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: #000000;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+        }
+
+        .navbar .navbar-nav .nav-link:not(.disabled):hover,
+        .navbar .navbar-nav .nav-link:not(.disabled):focus {
+            color: #fffefe;
+            background-color: #75787B;
+        }
+
+        .navbar .navbar-nav .nav-item.active .nav-link,
+        .navbar .navbar-nav .nav-item.active .nav-link:hover,
+        .navbar .navbar-nav .nav-item.active .nav-link:focus,
+        .navbar .navbar-nav .nav-item.show .nav-link,
+        .navbar .navbar-nav .nav-item.show .nav-link:hover,
+        .navbar .navbar-nav .nav-item.show .nav-link:focus {
+            color: #fffefe;
+            background-color: #000000;
+        }
+
+        .navbar .navbar-toggle {
+            /* border-color: #000000; */
+            margin-top: 23px;
+            padding: 9px 10px !important;
+        }
+
+        .navbar .navbar-toggle:hover,
+        .navbar .navbar-toggle:focus {
+            background-color: #000000;
+            margin-top: 23px;
+            padding: 9px 10px !important;
+        }
+
+        .navbar .navbar-toggle .navbar-toggler-icon {
+            color: #000000;
+            margin-top: 23px;
+            padding: 9px 10px !important;
+        }
+
+        .navbar .navbar-collapse,
+        .navbar .navbar-form {
+            border-color: #000000;
+        }
+
+        .navbar .navbar-link {
+            color: #000000;
+        }
+
+        .navbar .navbar-link:hover {
+            color: #fffefe;
+            background-color: #75787B;
+        }
+
+        @media (max-width: 575px) {
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #000000;
+            }
+
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #fffefe;
+                background-color: #75787B;
+            }
+
+            .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #fffefe;
+                background-color: #000000;
+            }
+
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #000000;
+            }
+
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #fffefe;
+                background-color: #75787B;
+            }
+
+            .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #fffefe;
+                background-color: #000000;
+            }
+
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #000000;
+
+
+            }
+
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #fffefe;
+                background-color: #75787B;
+            }
+
+            .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #fffefe;
+                background-color: #000000;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+                color: #000000;
+            }
+
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+                color: #fffefe;
+                background-color: #75787B;
+            }
+
+            .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+                color: #fffefe;
+                background-color: #000000;
+            }
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+            color: #000000;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+            color: #fffefe;
+            background-color: #75787B;
+        }
+
+        .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+            color: #fffefe;
+            background-color: #000000;
+        }
+
+        .index-header__logo {
+            height: 50px;
+            /*width: 50px;*/
+            padding-bottom: 0;
+        }
+
+        .jumbotron {
+            /* padding-top: 50px; */
+            background: white;
+            color: black;
+            padding-bottom: 50px
+        }
+
+        .jumbotron .btn-primary {
+            background: #C64600;
+            border: none;
+        }
+
+        .jumbotron .button-index {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .jumbotron .btn-primary:hover {
+            background: #E87722;
+            border: none;
+        }
+
+        .jumbotron p {
+            color: black;
+            max-width: 75%;
+            margin: 1em auto 2em
+        }
+
+        .navbar+.jumbotron {
+            margin-top: -20px
+        }
+
+        .jumbotron .lang-logo {
+            display: block;
+            background: white;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border: 2px solid white
+        }
+
+        .jumbotron .lang-logo img {
+            max-width: 100%
+        }
+
+        .center {
+            margin: auto;
+            text-align: center;
+        }
+
+        .footer {
+            background: white;
+            text-align: center;
+            padding-bottom: 60px
+        }
+
+        .clear {
+            padding-top: 50px;
+            background: white;
+            padding-bottom: 80px
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom" style="background-color: white;">
+        <div class="container text-center">
+            <!--        <a class="navbar-brand" href="/">icc.fyi</a>-->
+            <!--         <img href="https://imgur.com/6QasqxI"/>-->
+
+            <a class="navbar-brand" href="/"> <img class="index-header__logo" src="./icc.fyi.png" alt="icc.fyi"></a>
+        </div>
+    </nav>
+
+    <div class="jumbotron container text-center">
+        <div class="clear"></div>
+        <h1>Discussions</h1>
+
+    </div>
+    <script id="dsq-count-scr" src="//icc-fyi.disqus.com/count.js" async></script>
+    <div class ="container" id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+        var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://icc-fyi.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+
+</body>
