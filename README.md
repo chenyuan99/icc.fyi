@@ -2,6 +2,10 @@
 
 The platform for landing your first IT Consulting job
 
+https://discord.gg/X24GHUwtHW
+
+[![](https://dcbadge.limes.pink/api/server/X24GHUwtHW?style=flat)](https://discord.gg/X24GHUwtHW?style=flat)
+
 ## Disclaimer
 
 本文根据公开资料整理，如果对信息侵犯了您的权益，请联系 ivan@icc.fyi
